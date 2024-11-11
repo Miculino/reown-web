@@ -1,0 +1,16 @@
+.hero {
+  &__video_container {
+    will-change: border-radius;
+    transition: border-radius 2s ease-in-out;
+    transition-delay: 0;
+  }
+
+  &__grid {
+    align-content: end;
+    padding-bottom: 4rem;
+
+    &_content {
+      grid-column: 8 / span 4;
+    }
+  }
+}
