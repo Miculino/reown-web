@@ -3,6 +3,10 @@
     will-change: border-radius;
     transition: border-radius 2s ease-in-out;
     transition-delay: 0;
+
+    video {
+      object-position: 30%;
+    }
   }
 
   &__grid {
@@ -10,6 +14,9 @@
     padding-bottom: 4rem;
 
     &_content {
+      @media screen and (max-width: 800px) {
+        grid-column: 2 / span 10;
+      }
       grid-column: 8 / span 4;
     }
   }
