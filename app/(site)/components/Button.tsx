@@ -14,11 +14,13 @@ const buttonStyles = cva(
     variants: {
       intent: {
         primary: "bg-blue",
+        secondary: "bg-dark-gray text-white",
         outline: "bg-transparent border",
       },
       color: {
         white: "border-white",
         blue: "border-blue",
+        "dark-gray": "border-dark-gray",
       },
     },
     compoundVariants: [
@@ -30,6 +32,11 @@ const buttonStyles = cva(
       {
         intent: "outline",
         color: "blue",
+        className: "text-blue",
+      },
+      {
+        intent: "secondary",
+        color: "dark-gray",
         className: "text-blue",
       },
     ],

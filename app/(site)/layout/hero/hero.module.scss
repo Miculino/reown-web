@@ -1,8 +1,9 @@
 .hero {
   &__video_container {
-    will-change: border-radius;
-    transition: border-radius 2s ease-in-out;
-    transition-delay: 0;
+    // will-change: border-radius;
+    // transition: border-radius 2s ease-in-out;
+    // transition-delay: 0;
+    max-height: 55rem;
 
     video {
       object-position: 30%;

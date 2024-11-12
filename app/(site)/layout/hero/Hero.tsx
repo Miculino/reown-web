@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="">
       <div
-        className={`rounded-[80px] xl:rounded-full relative h-[85vh] overflow-hidden ${styles.hero__video_container}`}
+        className={`rounded-[100px] xl:rounded-full relative h-[85vh] overflow-hidden ${styles.hero__video_container}`}
       >
         <video
           className="absolute h-full w-full object-cover object-center"
