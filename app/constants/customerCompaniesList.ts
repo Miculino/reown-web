@@ -1,6 +1,6 @@
 export const CUSTOMER_COMPANIES_LIST = [
   {
-    name: "ATFKT",
+    name: "ARTFKT",
     logo: "",
   },
   {
