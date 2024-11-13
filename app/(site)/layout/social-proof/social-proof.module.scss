@@ -1,0 +1,18 @@
+.customers {
+  &__container {
+    display: flex;
+    will-change: transform;
+    animation: scroll 4s linear infinite;
+    animation-play-state: running;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate3d(-33.3333% + 33.3333%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-66.6666% + 33.3333%, 0, 0);
+  }
+}

@@ -12,9 +12,11 @@ export default function zkSyncLogo({ className, ...props }: zkSyncLogoProps) {
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 131 32"
+        width={131}
+        height={32}
         {...props}
       >
-        <g clip-path="url(#clip0_347_68333)">
+        <g clipPath="url(#clip0_347_68333)">
           <path
             fill="#363636"
             d="M45.1911 16.8388L32.437 3.99295V13.4057L19.7719 22.8243L32.437 22.8303V29.6905L45.1911 16.8388Z"

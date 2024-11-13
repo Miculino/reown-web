@@ -12,6 +12,8 @@ export default function Metamask({ className, ...props }: MetamaskProps) {
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 127 32"
+        width={127}
+        height={32}
         {...props}
       >
         <path

@@ -12,6 +12,8 @@ export default function Fireblocks({ className, ...props }: FireblocksProps) {
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 153 32"
+        width={153}
+        height={32}
         {...props}
       >
         <path

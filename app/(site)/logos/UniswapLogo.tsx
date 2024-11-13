@@ -12,6 +12,8 @@ export default function UniswapLogo({ className, ...props }: UniswapLogoProps) {
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 112 32"
+        width={112}
+        height={32}
         {...props}
       >
         <path

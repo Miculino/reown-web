@@ -12,9 +12,11 @@ export default function ZerionLogo({ className, ...props }: ZerionLogoProps) {
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 93 32"
+        width={93}
+        height={32}
         {...props}
       >
-        <g clip-path="url(#clip0_347_68366)">
+        <g clipPath="url(#clip0_347_68366)">
           <mask
             height="25"
             width="93"

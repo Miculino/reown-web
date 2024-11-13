@@ -12,6 +12,8 @@ export default function OKXLogo({ className, ...props }: OKXLogoProps) {
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 72 32"
+        width={72}
+        height={32}
         {...props}
       >
         <path
