@@ -13,6 +13,8 @@ export default {
         foreground: "var(--foreground)",
         blue: "var(--blue)",
         "dark-gray": "var(--dark-gray)",
+        orange: "var(--orange)",
+        yellow: "var(--yellow)",
       },
     },
   },

@@ -1,20 +1,24 @@
 // React
-import { FC, ReactElement, SVGProps } from "react";
+import { FC, PropsWithChildren, SVGProps } from "react";
 
-interface CardProps {
-  title: string;
+// CLSX
+import clsx from "clsx";
+
+interface CardProps extends PropsWithChildren {
   icon: FC<SVGProps<SVGSVGElement>>;
-  cardContent: ReactElement;
+  className?: string;
 }
 
-export default function Card({ title, icon: Icon, cardContent }: CardProps) {
+export default function Card({ icon: Icon, children, className }: CardProps) {
   return (
-    <div>
-      <Icon />
-      <div className="flex">
-        {title ? <h2>{title}</h2> : null}
-        {cardContent}
-      </div>
+    <div
+      className={clsx(
+        className,
+        "flex flex-col justify-between gap-30 bg-white rounded-[40px] p-10"
+      )}
+    >
+      <Icon className="h-32 self-end lg:self-start" />
+      {children}
     </div>
   );
 }

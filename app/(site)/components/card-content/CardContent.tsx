@@ -4,30 +4,58 @@ import styles from "./card-content.module.scss";
 // Components
 import Button from "../Button";
 
+// CLSX
+import clsx from "clsx";
+
 interface CardContentProps {
   tag: string;
   title: string;
   description: string;
-  mainBtnLabel: string;
+  mainBtnLabel?: string;
   mainBtnURL: string;
+  headline: string;
 }
 
 export default function CardContent({
   tag,
   title,
+  headline,
   description,
-  mainBtnLabel,
+  mainBtnLabel = "Learn more",
   mainBtnURL,
 }: CardContentProps) {
   return (
-    <div className={`flex flex-col gap-4 ${styles.card_content}`}>
-      {tag && <span>{tag}</span>}
-      <h1 className="text-lg md:text-3xl text-white">{title}</h1>
-      <p className="text-[#BBBBBB] text-base max-w-80 ml-8">{description}</p>
-      <div className="flex items-center gap-1">
+    <div className={`${styles.card__content}`}>
+      {title && <p className={clsx(styles.card__title, "text-4xl")}>{title}</p>}
+      {tag && (
+        <span className={clsx("text-xs text-gray-400", styles.card__tag)}>
+          {tag}
+        </span>
+      )}
+      <h1
+        className={clsx(
+          "text-lg md:text-3xl lg:text-lg text-black max-w-[17rem]",
+          styles.card__headline
+        )}
+      >
+        {headline}
+      </h1>
+      <p
+        className={clsx(
+          "text-[#BBBBBB] text-sm max-w-80 ml-8",
+          styles.card__description
+        )}
+      >
+        {description}
+      </p>
+      <div className={clsx("flex items-center gap-1", styles.card__ctas)}>
         <Button href={mainBtnURL}>{mainBtnLabel}</Button>
 
-        <Button intent={"outline"} href="https://docs.reown.com">
+        <Button
+          color={"dark-gray"}
+          intent={"outline"}
+          href="https://docs.reown.com"
+        >
           Docs
         </Button>
       </div>

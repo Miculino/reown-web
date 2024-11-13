@@ -1,7 +1,41 @@
-.card_content {
-  @media screen and (max-width: 800px) {
-    grid-column: 2 / span 10;
+.card {
+  &__content {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+      "title"
+      "tag"
+      "headline"
+      "description"
+      "ctas";
+
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: calc(50% + 0.5rem) auto;
+      grid-template-areas:
+        ". tag"
+        "title headline"
+        ". description"
+        ". ctas";
+    }
   }
 
-  grid-column: 8 / span 4;
+  &__title {
+    grid-area: title;
+  }
+
+  &__headline {
+    grid-area: headline;
+  }
+
+  &__tag {
+    grid-area: tag;
+  }
+
+  &__description {
+    grid-area: description;
+  }
+
+  &__ctas {
+    grid-area: ctas;
+  }
 }
