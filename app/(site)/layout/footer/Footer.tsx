@@ -1,3 +1,6 @@
+// Next
+import Image from "next/image";
+
 // Components
 import Newsletter from "../../components/Newsletter";
 
@@ -16,6 +19,15 @@ export default function Footer() {
       </div>
       <div className="p-2 rounded-[32px] bg-yellow aspect-square">
         <video src="/videos/Reown_Walletkit.webm" autoPlay muted></video>
+      </div>
+      <div>
+        <Image
+          className="w-full"
+          src={"/ReownLogo.svg"}
+          width={180}
+          height={48}
+          alt="Reown's Beautiful Logo"
+        />
       </div>
     </footer>
   );
