@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 
 export default function Hero() {
   return (
-    <section className="">
+    <section>
       <div
         className={`rounded-[100px] xl:rounded-full relative h-[85vh] overflow-hidden ${styles.hero__video_container}`}
       >

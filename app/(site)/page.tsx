@@ -2,6 +2,7 @@
 import AppKit from "./layout/appkit/AppKit";
 import Articles from "./layout/articles/Articles";
 import Hero from "./layout/hero/Hero";
+import OnchainCTA from "./layout/onchain-cta/OnchainCTA";
 import ProductOverview from "./layout/product-overview/ProductOverview";
 import Rsvp from "./layout/rsvp/Rsvp";
 import SocialProof from "./layout/social-proof/SocialProof";
@@ -17,6 +18,7 @@ export default function Home() {
       <AppKit />
       <WalletKit />
       <Articles />
+      <OnchainCTA />
     </main>
   );
 }
