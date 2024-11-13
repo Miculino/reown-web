@@ -38,7 +38,7 @@ export default function Footer() {
           <ul>
             {footer_item.links.map(({ label, url }, index) => (
               <li key={index}>
-                <Link href={url}>label</Link>
+                <Link href={url}>{label}</Link>
               </li>
             ))}
           </ul>
