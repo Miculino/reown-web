@@ -8,36 +8,49 @@ import Button from "./Button";
 // Icons
 import ArrowIcon from "../icons/Arrow";
 
-export default function ArticleCard() {
+interface ArticleCardProps {
+  date: string;
+  title: string;
+  category: string;
+  link: string;
+  thumbnail: string;
+}
+
+export default function ArticleCard({
+  date,
+  title,
+  category,
+  link,
+  thumbnail,
+}: ArticleCardProps) {
   return (
     <div className="overflow-hidden rounded-[40px]">
       <div className="bg-gray-100 p-10 pb-20">
         <div className="flex justify-between text-xs">
-          <time dateTime="2024-09-16T10:00:00.000Z">09.16.2024</time>
-          <p>Company update</p>
+          <time dateTime={new Date(date).toISOString()}>{date}</time>
+          <p>{category}</p>
         </div>
         <div>
-          <Link href={"https://reown.com/blog/walletconnect-is-now-reown"}>
+          <Link
+            href={`https://reown.com/blog/
+https://reown.com/blog/${link}`}
+          >
             <h3 className="mt-3 text-[32px] line-clamp-2 leading-[1]">
-              Meet Reown: the onchain UX platform
+              {title}
             </h3>
           </Link>
           <Button
             className="mt-8"
             color={"dark-gray"}
-            href="https://reown.com/blog/walletconnect-is-now-reown"
+            href={`https://reown.com/blog/
+https://reown.com/blog/${link}`}
           >
             <ArrowIcon width={35} height={32} />
           </Button>
         </div>
       </div>
       <div>
-        <Image
-          src={"/illustrations/Renown.png"}
-          width={2400}
-          height={1260}
-          alt=""
-        />
+        <Image src={thumbnail} width={2400} height={1260} alt={title} />
       </div>
     </div>
   );
