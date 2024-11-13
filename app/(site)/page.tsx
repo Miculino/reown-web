@@ -1,4 +1,5 @@
 // Layout
+import Navbar from "@/navbar/Navbar";
 import AppKit from "./layout/appkit/AppKit";
 import Articles from "./layout/articles/Articles";
 import Hero from "./layout/hero/Hero";
@@ -11,6 +12,7 @@ import WalletKit from "./layout/walletkit/WalletKit";
 export default function Home() {
   return (
     <main>
+      <Navbar />
       <Hero />
       <Rsvp />
       <ProductOverview />

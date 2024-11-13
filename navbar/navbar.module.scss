@@ -1,0 +1,15 @@
+.navbar {
+  top: 10px;
+  z-index: 99;
+  transition: transform 0.3s ease;
+
+  &.fixed {
+    position: fixed;
+    transform: translate3d(0, 0, 0);
+  }
+
+  &.hidden {
+    position: fixed;
+    transform: translate3d(0, calc(60px * -1), 0);
+  }
+}
