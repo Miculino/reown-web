@@ -1,5 +1,7 @@
-// SCSS
+// Styles
 import styles from "./hero.module.scss";
+
+// Components
 import Button from "../../components/Button";
 
 export default function Hero() {
