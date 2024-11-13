@@ -2,14 +2,25 @@
 import Link from "next/link";
 
 // Components
-import Button from "./Button";
+import Button from "../Button";
+
+// Styles
+import styles from "./newsletter.module.scss";
+
+// CLSX
+import clsx from "clsx";
 
 // Icons
-import ArrowIcon from "../icons/Arrow";
+import ArrowIcon from "../../icons/Arrow";
 
 export default function Newsletter() {
   return (
-    <div className="bg-dark-gray rounded-[40px] p-2 pt-6">
+    <div
+      className={clsx(
+        "bg-dark-gray rounded-[40px] p-2 pt-6",
+        styles.newsletter
+      )}
+    >
       <div className="flex flex-col text-white gap-2 ml-6">
         <div>
           <p>Subscribe to our newsletter</p>

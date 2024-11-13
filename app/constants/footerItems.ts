@@ -1,4 +1,4 @@
-export const FOOTER_LINKS = [
+export const FOOTER_ITEMS = [
   {
     title: "Developers",
     links: [

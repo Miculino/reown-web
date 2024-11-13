@@ -1,3 +1,28 @@
 .footer {
-  display: default;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  &__lotties {
+    grid-column-end: span 6;
+  }
+
+  &__item {
+    &-1 {
+      grid-column-end: span 3;
+      grid-row-end: span 2;
+    }
+
+    &-2 {
+      // grid-column-start: 4;
+      grid-column-end: span 3;
+    }
+
+    &-3 {
+      grid-column-end: span 3;
+    }
+  }
+
+  &__logo {
+    grid-column-end: span 6;
+  }
 }
