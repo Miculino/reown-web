@@ -1,5 +1,6 @@
 // Layout
 import AppKit from "./layout/appkit/AppKit";
+import Articles from "./layout/articles/Articles";
 import Hero from "./layout/hero/Hero";
 import ProductOverview from "./layout/product-overview/ProductOverview";
 import Rsvp from "./layout/rsvp/Rsvp";
@@ -15,6 +16,7 @@ export default function Home() {
       <SocialProof />
       <AppKit />
       <WalletKit />
+      <Articles />
     </main>
   );
 }
