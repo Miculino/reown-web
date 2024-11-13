@@ -48,6 +48,7 @@ interface ButtonProps extends VariantProps<typeof buttonStyles> {
   href?: string;
   className?: string;
   onClick?: () => void;
+  type?: "submit" | "button";
 }
 
 export default function Button({
@@ -57,6 +58,7 @@ export default function Button({
   children,
   className,
   onClick,
+  type = "button",
   ...props
 }: ButtonProps) {
   const buttonClassName = clsx(buttonStyles({ intent, color }), className);
@@ -66,7 +68,12 @@ export default function Button({
       {children}
     </Link>
   ) : (
-    <button className={buttonClassName} onClick={onClick} {...props}>
+    <button
+      type={type}
+      className={buttonClassName}
+      onClick={onClick}
+      {...props}
+    >
       {children}
     </button>
   );

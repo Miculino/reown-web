@@ -1,6 +1,7 @@
 // Layout
 import AppKit from "./layout/appkit/AppKit";
 import Articles from "./layout/articles/Articles";
+import Footer from "./layout/footer/Footer";
 import Hero from "./layout/hero/Hero";
 import OnchainCTA from "./layout/onchain-cta/OnchainCTA";
 import ProductOverview from "./layout/product-overview/ProductOverview";
@@ -19,6 +20,7 @@ export default function Home() {
       <WalletKit />
       <Articles />
       <OnchainCTA />
+      <Footer />
     </main>
   );
 }
