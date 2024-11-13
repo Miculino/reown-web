@@ -1,3 +1,22 @@
 .onchain_cta {
   display: default;
+
+  &__headline {
+    grid-column-start: 2;
+    position: absolute;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__grid {
+    align-content: end;
+    padding-bottom: 4rem;
+  }
+
+  &__content {
+    @media screen and (max-width: 800px) {
+      grid-column: 2 / span 10;
+    }
+    grid-column: 8 / span 4;
+  }
 }
