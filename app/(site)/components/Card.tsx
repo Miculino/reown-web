@@ -1,5 +1,20 @@
-import React from "react";
+// React
+import { FC, ReactElement, SVGProps } from "react";
 
-export default function Card() {
-  return <div>Card</div>;
+interface CardProps {
+  title: string;
+  icon: FC<SVGProps<SVGSVGElement>>;
+  cardContent: ReactElement;
+}
+
+export default function Card({ title, icon: Icon, cardContent }: CardProps) {
+  return (
+    <div>
+      <Icon />
+      <div className="flex">
+        {title ? <h2>{title}</h2> : null}
+        {cardContent}
+      </div>
+    </div>
+  );
 }
