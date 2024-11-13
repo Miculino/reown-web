@@ -15,7 +15,7 @@ export default function ArrowIcon({ className, ...props }: ArrowIconProps) {
       >
         <path
           stroke="#fff"
-          stroke-width="2"
+          strokeWidth="2"
           d="m18.564 1.257 14.523 14.524-14.524 14.524M.475 15.784h31.747"
         ></path>
       </svg>
