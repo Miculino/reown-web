@@ -34,10 +34,16 @@ export default function Footer() {
             styles[`footer__item-${index + 1}`]
           )}
         >
-          <p>{footer_item.title}</p>
-          <ul>
+          <p className="text-xs">{footer_item.title}</p>
+          <ul className="flex flex-col h-full">
             {footer_item.links.map(({ label, url }, index) => (
-              <li key={index}>
+              <li
+                className={clsx(
+                  "text-xs text-gray-400",
+                  styles.footer__list_item
+                )}
+                key={index}
+              >
                 <Link href={url}>{label}</Link>
               </li>
             ))}
