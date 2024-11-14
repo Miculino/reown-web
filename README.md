@@ -6,6 +6,8 @@
 
 ## 🚀 Reown Homepage Clone
 
+![image](./public/illustrations/Reown.png)
+
 ### Description
 
 A visually engaging and informative homepage for the Reown website.
@@ -22,7 +24,15 @@ A visually engaging and informative homepage for the Reown website.
 
 > A few visual examples of the project in action:
 
-1. Screenshot Example
+### Hero Section
+
+![Hero](./Hero.jpg)
+_An example of the Hero section with the dynamic grid layout._
+
+### Footer Section
+
+![Footer](./Footer.jpg)
+_A sneak peek of the footer section with sticky navigation._
 
 ---
 
