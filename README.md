@@ -22,7 +22,7 @@ A visually engaging and informative homepage for the Reown website.
 
 ## 📸 Screenshots
 
-> A few visual examples of the project in action:
+> A few visual examples of the Reown homepage:
 
 ### Hero Section
 
