@@ -4,25 +4,47 @@
 
   &__lotties {
     grid-column-end: span 6;
+
+    @media screen and (min-width: 1024px) {
+      grid-column-start: 1;
+      grid-column-end: span 2;
+    }
   }
 
   &__item {
     &-1 {
       grid-column-end: span 3;
       grid-row-end: span 2;
+
+      @media screen and (min-width: 1024px) {
+        grid-column-end: span 1;
+        grid-row-end: span 4;
+      }
     }
 
     &-2 {
       grid-column-end: span 3;
+
+      @media screen and (min-width: 1024px) {
+        grid-column-end: span 1;
+      }
     }
 
     &-3 {
       grid-column-end: span 3;
+
+      @media screen and (min-width: 1024px) {
+        grid-column-end: span 2;
+      }
     }
   }
 
   &__logo {
     grid-column-end: span 6;
+
+    @media screen and (min-width: 1024px) {
+      grid-column-start: 4;
+    }
   }
 
   &__list_item {
