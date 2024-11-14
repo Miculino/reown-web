@@ -15,6 +15,7 @@ export default {
         "dark-gray": "var(--dark-gray)",
         orange: "var(--orange)",
         yellow: "var(--yellow)",
+        green: "Var(--green)",
       },
     },
   },

@@ -15,13 +15,13 @@ const buttonStyles = cva(
       intent: {
         primary: "bg-blue",
         secondary: "bg-dark-gray text-blue",
+        tertiary: "bg-[#BBB]",
         outline: "bg-transparent border",
       },
       color: {
         white: "border-white",
         blue: "border-blue",
         "dark-gray": "border-dark-gray",
-        gray: "bg-[#BBB]",
       },
     },
     compoundVariants: [
