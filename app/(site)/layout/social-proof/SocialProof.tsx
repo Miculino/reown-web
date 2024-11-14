@@ -20,11 +20,6 @@ export default function SocialProof() {
             <CompanyLogo />
           </div>
         ))}
-        {/* {CUSTOMER_COMPANIES_LIST.map(({ logo: CompanyLogo, name }, index) => (
-          <div key={index + CUSTOMER_COMPANIES_LIST.length}>
-            <CompanyLogo />
-          </div>
-        ))} */}
       </div>
     </section>
   );
