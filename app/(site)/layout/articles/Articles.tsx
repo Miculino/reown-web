@@ -1,5 +1,6 @@
 // Components
 import ArticleCard from "../../components/ArticleCard";
+import Button from "../../components/Button";
 
 // Styles
 import styles from "./articles.module.scss";
@@ -9,7 +10,6 @@ import clsx from "clsx";
 
 // Blog
 import { articles } from "../../blog/articles";
-import Button from "../../components/Button";
 
 export default function Articles() {
   return (
@@ -28,7 +28,11 @@ export default function Articles() {
         ))}
       </div>
       <div className="flex items-center justify-center mt-6">
-        <Button href="https://reown.com/blog" intent={"secondary"}>
+        <Button
+          className="text-white"
+          href="https://reown.com/blog"
+          intent={"secondary"}
+        >
           More Articles
         </Button>
       </div>
