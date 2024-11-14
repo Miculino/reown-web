@@ -21,6 +21,7 @@ const buttonStyles = cva(
         white: "border-white",
         blue: "border-blue",
         "dark-gray": "border-dark-gray",
+        gray: "bg-[#BBB]",
       },
     },
     compoundVariants: [
@@ -61,6 +62,7 @@ export default function Button({
   type = "button",
   ...props
 }: ButtonProps) {
+  console.log(className);
   const buttonClassName = clsx(buttonStyles({ intent, color }), className);
 
   return href ? (

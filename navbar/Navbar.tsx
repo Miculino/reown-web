@@ -1,13 +1,28 @@
 "use client";
 
-import styles from "./navbar.module.scss";
-import clsx from "clsx";
-import ReownLogo from "@/app/(site)/logos/ReownLogo";
+// React
 import { useState, useEffect, useCallback } from "react";
 
+// Components
+import Button from "@/app/(site)/components/Button";
+
+// Styles
+import styles from "./navbar.module.scss";
+
+// CLSX
+import clsx from "clsx";
+
+// Logos
+import ReownLogo from "@/app/(site)/logos/ReownLogo";
+
 export default function Navbar() {
-  const [isFixed, setIsFixed] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isFixed, setIsFixed] = useState<boolean>(true);
+  const [lastScrollY, setLastScrollY] = useState<number>(0);
+  const [isCollapsibleOpen, setIsCollapsibleOpen] = useState<boolean>(false);
+
+  const handleToggleCollapsibleMenu = () => {
+    setIsCollapsibleOpen((prevState) => !prevState);
+  };
 
   const handleScroll = useCallback(() => {
     const currentScrollY = window.scrollY;
@@ -31,12 +46,26 @@ export default function Navbar() {
 
   return (
     <nav
-      className={clsx(styles.navbar, {
-        [styles.fixed]: isFixed,
-        [styles.hidden]: !isFixed,
-      })}
+      className={clsx(
+        styles.navbar,
+        {
+          [styles.fixed]: isFixed,
+          [styles.hidden]: !isFixed,
+        },
+        "flex gap-1"
+      )}
     >
       <ReownLogo width={180} height={48} />
+
+      <Button
+        onClick={handleToggleCollapsibleMenu}
+        className={clsx(styles.navbar__collapsibleBtn, {
+          [styles.isOpen]: isCollapsibleOpen,
+        })}
+        color={"gray"}
+      >
+        {""}
+      </Button>
     </nav>
   );
 }

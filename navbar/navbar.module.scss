@@ -1,5 +1,5 @@
 .navbar {
-  top: 10px;
+  top: 5px;
   z-index: 99;
   transition: transform 0.3s ease;
 
@@ -11,5 +11,36 @@
   &.hidden {
     position: fixed;
     transform: translate3d(0, calc(60px * -1), 0);
+  }
+
+  &__collapsibleBtn {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 70%;
+      height: 2px;
+      background-color: var(--dark-gray);
+      position: absolute;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+
+    &.isOpen {
+      &::before {
+        transform: rotate(180deg);
+      }
+
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
   }
 }
