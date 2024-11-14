@@ -20,10 +20,10 @@ export default function Footer() {
       <Newsletter />
       <div className={clsx("grid grid-cols-2 gap-2", styles.footer__lotties)}>
         <div className="p-2 rounded-[32px] bg-orange aspect-sqquare">
-          <video src="/videos/Reown_Appkit.webm" autoPlay muted></video>
+          <video src="/videos/Reown_Appkit.webm" autoPlay muted loop></video>
         </div>
         <div className="p-2 rounded-[32px] bg-yellow aspect-square">
-          <video src="/videos/Reown_Walletkit.webm" autoPlay muted></video>
+          <video src="/videos/Reown_Walletkit.webm" autoPlay muted loop></video>
         </div>
       </div>
       {FOOTER_ITEMS.map((footer_item, index) => (
