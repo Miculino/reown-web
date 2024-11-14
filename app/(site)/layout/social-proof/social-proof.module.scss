@@ -2,8 +2,9 @@
   &__container {
     display: flex;
     will-change: transform;
-    animation: scroll 10s linear infinite;
+    animation: scroll 8s linear infinite;
     animation-play-state: running;
+    width: calc(208px * 18);
   }
 }
 
@@ -13,6 +14,6 @@
   }
 
   100% {
-    transform: translate3d(-99.99%, 0, 0);
+    transform: translate3d(calc(-208px * 9), 0, 0);
   }
 }
