@@ -1,22 +1,49 @@
 .onchain_cta {
   display: default;
 
+  &__container {
+    @media screen and (min-width: 480px) {
+      height: 85vh;
+    }
+  }
+
   &__headline {
-    grid-column-start: 2;
-    position: absolute;
-    height: 100%;
-    align-items: center;
+    grid-column-end: span 6;
+
+    @media screen and (min-width: 768px) {
+      grid-column-start: 2;
+      position: absolute;
+      height: 100%;
+      align-items: center;
+    }
   }
 
   &__grid {
     align-content: end;
-    padding-bottom: 4rem;
+
+    @media screen and (min-width: 480px) {
+      padding-bottom: 4rem;
+    }
   }
 
   &__content {
     @media screen and (max-width: 800px) {
       grid-column: 2 / span 10;
     }
+
     grid-column: 8 / span 4;
+  }
+
+  &__lottie {
+    @media screen and (min-width: 480px) {
+      position: absolute;
+      right: 64px;
+      width: calc((100% - var(--gutter) * 11) / 14 * 5 + var(--gutter) * 4);
+    }
+
+    @media screen and (min-width: 1240px) {
+      width: calc((100% - var(--gutter) * 11) / 18 * 5 + var(--gutter) * 4);
+      right: calc((100% - var(--gutter) * 11) / 12 * 2 + var(--gutter) * 1);
+    }
   }
 }

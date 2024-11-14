@@ -10,6 +10,7 @@
   --yellow: #ffb800;
   --orange: #f0573c;
   --green: #008847;
+  --gutter: 0.5rem;
 }
 
 body {
